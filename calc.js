@@ -4,12 +4,10 @@
 	 var tempValue = "";
 
 
-
 	  // Bind events
 	  $('.btn-num').on('click', function(evt) {
 	  	var $el = $(evt.currentTarget);
 	  	var num = $el.data('num');
-
 
 
 	  	updateTempValue(num);
