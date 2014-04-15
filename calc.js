@@ -76,6 +76,7 @@
 		}
 	});
 
+<<<<<<< HEAD
 	// jQuery selector for .btn-opp class; creates a jQuery object
 	// listening for the click event on this jQuery object
 	// the .on() method takes 2 parameters
@@ -105,6 +106,13 @@
 		// replaces an if else
 		// takes any parameter and checks equality against multiple cases
 		// break terminates the switch
+=======
+	$('.btn-opp').on('click', function (evt) {
+
+		var $btn = $(evt.currentTarget);
+		var opperator = $btn.data('opp');
+
+>>>>>>> FETCH_HEAD
 		switch(opperator) {
 			case 'add':
 				add();
@@ -117,6 +125,10 @@
 				break;
 		};
 	});
+<<<<<<< HEAD
+=======
+
+>>>>>>> FETCH_HEAD
 // END Bind events events
 
 	function add () {
@@ -129,7 +141,12 @@
 
 	function divide () {
 		alert('divide button clicked');
+<<<<<<< HEAD
 	};
+=======
+	}
+
+>>>>>>> FETCH_HEAD
 // Display functions
 	function updateTempValue(val) {
 		var stringValue = val.toString();
@@ -148,4 +165,8 @@
 	function setDisplay(val) {
 		$('.calc-val').val(val);
 	};
+<<<<<<< HEAD
 // END Display functions
+=======
+// END Display functions
+>>>>>>> FETCH_HEAD
